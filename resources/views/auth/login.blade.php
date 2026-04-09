@@ -9,7 +9,7 @@
     <style>
         /* === Background dengan gambar lokal & efek blur === */
         body {
-            background: url('/images/smator-bg.png') no-repeat center center fixed;
+            background: url('{{ asset("images/smator-bg.png") }}') no-repeat center center fixed;
             background-size: cover;
             min-height: 100vh;
             display: flex;
@@ -94,7 +94,8 @@
 
     <div class="login-box">
         <h3>Sistem Manajemen Dokumen Sekolah</h3>
-        <img src="/images/logo-smator.png" alt="Logo Sekolah" class="school-logo">
+       <img src="{{ asset('images/logo-smator.png') }}" alt="Logo Sekolah" class="school-logo">
+    <p class="text-muted" style="font-size: 12px; margin-top: 8px;">Portal Login Sekolah</p>
 
         @if($errors->any())
             <div class="alert alert-danger">{{ $errors->first() }}</div>

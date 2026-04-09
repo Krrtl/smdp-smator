@@ -7,7 +7,7 @@
     /* ===== Hero Section ===== */
     .about-hero {
         background: linear-gradient(135deg, rgba(55, 62, 59, 0.85), rgba(51, 56, 53, 0.6)),
-                    url('/images/smator-bg.png') no-repeat center center/cover;
+                    url('{{ asset("images/smator-bg.png") }}') no-repeat center center/cover;
         color: white;
         text-align: center;
         padding: 120px 20px 90px;

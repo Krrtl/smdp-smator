@@ -6,7 +6,7 @@
 <style>
     /* ===== Hero Section ===== */
     .hero-section {
-        background: url('/images/smator-bg.png') no-repeat center center/cover;
+        background: url('{{ asset("images/smator-bg.png") }}') no-repeat center center/cover;
         position: relative;
         min-height: 100vh;
         display: flex;
